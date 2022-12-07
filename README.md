@@ -1,2 +1,12 @@
 # AEDS-II
 Tipos de Listas
+
+- Lista Contígua
+- Lista Encadeada
+- Lista Duplamente Encadeada
+- Listas Especiais
+  - Fila
+  - Pilha
+  - Lista Circular
+- Estrutura de Arvore
+  - Arvore Binária
