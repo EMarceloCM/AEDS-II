@@ -1,22 +1,33 @@
-#include "cliente.h"
-#include <iostream>
-
 #pragma once
+#include "cliente.h"
 
 class nodo
 {
     private:
+        nodo *pai;
+        nodo *esq;
+        nodo *dir;
         cliente c;
-        nodo *prox;
-        nodo *ant;
+        int nivel;
     public:
-        nodo();
-        nodo(cliente &c);
+        //construtores
+        nodo(/* args */);
+        nodo(cliente &outro);
+        nodo(const nodo &orig);
+        virtual ~nodo();
+        
+        //getters e setters
+        void setDir(nodo *dir);
+        nodo* getDir() const;
+        void setEsq(nodo *esq);
+        nodo* getEsq() const;
+        void setPai(nodo* pai);
+        nodo* getPai() const;
+        void setCliente(cliente c);
+        cliente getCliente() const;
+        void setNivel(int nivel);
+        int getNivel() const;
 
-        cliente getCliente();
-        void setCliente(cliente &c);
-        void setProx(nodo* prox);
-        nodo* getProx();
-        void setAnt(nodo* ant);
-        nodo* getAnt();
+        int getQuantFilhos();
+        nodo* getFilhoUnico();
 };
