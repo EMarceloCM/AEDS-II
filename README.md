@@ -8,5 +8,5 @@ Tipos de Listas
   - Fila
   - Pilha
   - Lista Circular
-- Estrutura de Arvore
-  - Arvore Binária
+- Estrutura de Árvore
+  - Árvore Binária
