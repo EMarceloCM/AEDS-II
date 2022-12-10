@@ -3,7 +3,7 @@
 
 #pragma once
 
-class listaEncadeada //Lista Circular Duplamente Encadeada
+class listaEncadeada
 {
     private:
         int quant;
