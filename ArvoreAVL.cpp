@@ -300,6 +300,8 @@ void ArvoreAVL::rotacaoDupla_DirEsq(No *p, No *q, No *r){
 
         if(r->getDir() != NULL){ //caso o elemento tenha entrado a direita
             q->setEsq(r->getDir()); //para que r nao fique com 2 filhos a direta
+        }else{
+            q->setEsq(NULL);
         }
         r->setDir(q); //q passou a ser filho de r
 
@@ -314,6 +316,8 @@ void ArvoreAVL::rotacaoDupla_DirEsq(No *p, No *q, No *r){
         
         if(r->getEsq() != NULL){ //caso o elemento tenha entrado a esquerda
             p->setDir(r->getEsq());
+        }else{
+            p->setDir(NULL); //p deixa de apontar para r que agora é seu pai
         }
         r->setEsq(p);
     }
@@ -329,6 +333,8 @@ void ArvoreAVL::rotacaoDupla_EsqDir(No *p, No *q, No *r){
 
         if(r->getEsq() != NULL){ //troquei dir por esq
             q->setDir(r->getEsq()); //inverte dir e esq
+        }else{
+            q->setDir(NULL);
         }
         r->setEsq(q); //troquei dir por esq
 
@@ -343,6 +349,8 @@ void ArvoreAVL::rotacaoDupla_EsqDir(No *p, No *q, No *r){
         
         if(r->getDir() != NULL){ //troquei esq por dir
             p->setEsq(r->getDir()); //inverte dir e esq
+        }else{
+            p->setEsq(NULL);
         }
         r->setDir(p); //troquei esq por dir
     }
