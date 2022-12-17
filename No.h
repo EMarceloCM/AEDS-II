@@ -8,7 +8,7 @@ class No
         No *esq;
         No *dir;
         cliente c;
-        int nivel;
+        int fator;
     public:
         //construtores
         No(/* args */);
@@ -25,8 +25,8 @@ class No
         No* getPai() const;
         void setCliente(cliente c);
         cliente getCliente() const;
-        void setNivel(int nivel);
-        int getNivel() const;
+        void setFator(int fator);
+        int getFator() const;
 
         int getQuantFilhos();
         No* getFilhoUnico();

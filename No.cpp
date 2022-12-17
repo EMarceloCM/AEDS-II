@@ -5,7 +5,7 @@ No::No() {
     this->esq = NULL;
     this->dir = NULL;
     //this->c = NULL;
-    this->nivel = 0;
+    this->fator = 0;
 }
 
 No::No(cliente& outro){
@@ -13,7 +13,7 @@ No::No(cliente& outro){
     this->esq = NULL;
     this->c.copiar(outro);
     this->dir = NULL;
-    this->nivel = 1;
+    this->fator = 1;
 }
 
 No::No(const No& orig) {
@@ -21,7 +21,7 @@ No::No(const No& orig) {
     this->c = orig.getCliente();
     this->esq = orig.getEsq();
     this->dir = orig.getDir();
-    this->nivel = orig.getNivel();
+    this->fator = orig.getFator();
             
 }
 
@@ -47,12 +47,12 @@ No* No::getFilhoUnico(){ //retorna null caso tenha mais de um filho
     }
 }
 
-void No::setNivel(int nivel){
-    this->nivel = nivel;
+void No::setFator(int fator){
+    this->fator = fator;
 }
 
-int No::getNivel() const{
-    return nivel;
+int No::getFator() const{
+    return fator;
 }
 
 void No::setDir(No* dir){
