@@ -255,6 +255,7 @@ void ArvoreAVL::executaBalanceamento(No* entrou){
         else if (p->getFator() < 0 && q->getFator() > 0) //-+, duas rotações
         {
             No *r = getP(q); //realizar as duas rotações R->Q e R->P
+            rotacaoDupla_EsqDir(p, q, r);
         }else
         {
             cout << "\nNão foi encontrado desbalanceamento." << endl;
