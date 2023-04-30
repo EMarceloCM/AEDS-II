@@ -1,5 +1,5 @@
 # AEDS-II
-Tipos de Listas
+**Tipos de Listas**
 
 - Lista Contígua
 - Lista Encadeada
