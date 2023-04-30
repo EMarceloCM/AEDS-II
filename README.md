@@ -10,3 +10,4 @@
   - Lista Circular
 - Estrutura de Árvore
   - Árvore Binária
+  - Árvore Rubro-Negra
