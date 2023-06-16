@@ -2,7 +2,7 @@
 #include <iostream>
 
 #pragma once
-
+//originalmente era encadeada
 class listaEncadeada
 {
     private:
